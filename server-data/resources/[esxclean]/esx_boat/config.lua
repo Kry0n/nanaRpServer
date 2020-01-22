@@ -74,15 +74,15 @@ Config.Zones = {
 }
 
 Config.Vehicles = {
-	{model = 'seashark', label = 'Seashark (Random Color)', price = 7500},
-	{model = 'seashark3', label = 'Seashark (Dark Blue)', price = 7500},
-	{model = 'suntrap', label = 'Suntrap', price = 10000},
-	{model = 'jetmax', label = 'Jetmax', price = 45000},
-	{model = 'tropic2', label = 'Tropic', price = 65000},
-	{model = 'dinghy2', label = 'Dinghy (Black)', price = 32500},
-	{model = 'dinghy', label = 'Dinghy 2 (Random Color)', price = 40000},
-	{model = 'speeder', label = 'Speeder', price = 85000},
-	{model = 'squalo', label = 'Squalo (Random Color)', price = 61000},
-	{model = 'toro', label = 'Toro', price = 200000},
-	{model = 'submersible', label = 'Submersible', price = 750000}
+	{model = 'seashark', label = '水上摩托車(隨機顏色)', price = 7500},
+	{model = 'seashark3', label = '水上摩托車(深藍)', price = 7500},
+	{model = 'suntrap', label = '快艇Suntrap', price = 10000},
+	{model = 'jetmax', label = '高速船', price = 45000},
+	{model = 'tropic2', label = '熱帶船Tropic', price = 65000},
+	{model = 'dinghy2', label = '小艇(黑)', price = 32500},
+	{model = 'dinghy', label = '小艇2(隨機顏色)', price = 40000},
+	{model = 'speeder', label = '快艇', price = 85000},
+	{model = 'squalo', label = '鯊魚船(隨機顏色)', price = 61000},
+	{model = 'toro', label = '托羅船', price = 200000},
+	{model = 'submersible', label = '潛水艇', price = 750000}
 }
