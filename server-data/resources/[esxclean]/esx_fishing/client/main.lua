@@ -182,13 +182,13 @@ Citizen.CreateThread(function()
 				StopAnimTask(GetPed(), 'amb@world_human_stand_fishing@idle_a','idle_c',2.0)
 				Citizen.Wait(200)
 				DeleteEntity(FishRod)
-				if ShowChatMSG then ESX.ShowNotification("Le poisson s'est échappé ...") end
+				if ShowChatMSG then ESX.ShowNotification("魚逃脫了!") end
 			end
 			if IsControlJustPressed(1, Caught_KEY) then
 				if BarAnimation >= SuccessLimit then
 					CFish = false
 					TimerAnimation = 0.1
-					if ShowChatMSG then ESX.ShowNotification("Vous avez attrapé un poisson !") end
+					if ShowChatMSG then ESX.ShowNotification("抓到魚了!") end
 					StopAnimTask(GetPed(), 'amb@world_human_stand_fishing@idle_a','idle_c',2.0)
 					Citizen.Wait(200)
 					DeleteEntity(FishRod)
