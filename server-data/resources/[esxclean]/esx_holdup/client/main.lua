@@ -11,7 +11,7 @@ Citizen.CreateThread(function()
 end)
 
 function drawTxt(x,y, width, height, scale, text, r,g,b,a, outline)
-	SetTextFont(0)
+	SetTextFont(1)
 	SetTextScale(scale, scale)
 	SetTextColour(r, g, b, a)
 	SetTextDropshadow(0, 0, 0, 0,255)

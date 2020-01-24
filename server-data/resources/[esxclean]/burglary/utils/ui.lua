@@ -21,7 +21,7 @@ function DrawNoiseBar(noise, barIndex)
 end
 
 function DrawText(text, x, y, scale, right, width)
-	SetTextFont(0)
+	SetTextFont(1)
 	SetTextScale(scale, scale)
 	SetTextColour(254, 254, 254, 255)
 

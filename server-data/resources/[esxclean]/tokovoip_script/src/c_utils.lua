@@ -66,7 +66,7 @@ AddEventHandler("Tokovoip:doRefreshAllPlayerData", doRefreshAllPlayerData);
 --------------------------------------------------------------------------------
 
 function drawTxt(x,y ,width,height,scale, text, r,g,b,a)
-	SetTextFont(0);
+	SetTextFont(1);
 	SetTextProportional(0);
 	SetTextScale(scale, scale);
 	SetTextColour(r, g, b, a);

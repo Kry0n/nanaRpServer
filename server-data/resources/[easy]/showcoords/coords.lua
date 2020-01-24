@@ -1,5 +1,5 @@
 function DrawTxt(text, x, y)
-	SetTextFont(0)
+	SetTextFont(1)
 	SetTextProportional(1)
 	SetTextScale(0.0, 0.4)
 	SetTextDropshadow(1, 0, 0, 0, 255)

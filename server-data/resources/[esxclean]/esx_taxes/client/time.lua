@@ -2,7 +2,7 @@ local month, DayOfMonth, DayOfWeek, hour, minute, second
 
 --[[    Show Text   ]]
 function DrawTxt(text, x, y)
-	SetTextFont(0)
+	SetTextFont(1)
 	SetTextProportional(1)
 	SetTextScale(0.3, 0.3)
 	SetTextDropshadow(1, 0, 0, 0, 255)
