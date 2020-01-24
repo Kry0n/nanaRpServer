@@ -8,14 +8,9 @@ Citizen.CreateThread(function()
 		Wait(0)
 
 		if (IsControlJustPressed(1, 212) or IsControlJustPressed(1, 213)) then
-			print(group ~= "user")
 			if group ~= "user" then
-				print(#getPlayers())
 				SetNuiFocus(true, true)
 				SendNUIMessage({type = 'open', players = getPlayers()})
-				for k, v in pairs(getPlayers()) do
-					print('key: ' .. k .. '  value: ' .. v)
-				end
 			end
 		end
 	end
@@ -261,10 +256,18 @@ end)
 
 function getPlayers()
 	local players = {}
+	
+	for key, value in pairs(GetActivePlayers()) do
+		table.insert(players, {id = GetPlayerServerId(value), name = GetPlayerName(value)})
+	end
+	--[[
 	for i = 0,32 do
+		print("i: " .. i .. "    is active ")
+		print(NetworkIsPlayerActive(i))
 		if NetworkIsPlayerActive(i) then
 			table.insert(players, {id = GetPlayerServerId(i), name = GetPlayerName(i)})
 		end
 	end
+	]]--
 	return players
 end

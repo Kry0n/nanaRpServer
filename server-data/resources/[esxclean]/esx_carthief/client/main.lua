@@ -78,6 +78,11 @@ function SpawnCar()
 							Citizen.Wait(1)
 						end
 						car = CreateVehicle(vehiclehash, Config.VehicleSpawnPoint.Pos.x, Config.VehicleSpawnPoint.Pos.y, Config.VehicleSpawnPoint.Pos.z, 0.0, true, false)
+						
+						local fuel = math.random(80,100)
+
+						exports["LegacyFuel"]:SetFuel(car, fuel)
+						
 						SetEntityAsMissionEntity(car, true, true)
 						
 						--Teleport player in car

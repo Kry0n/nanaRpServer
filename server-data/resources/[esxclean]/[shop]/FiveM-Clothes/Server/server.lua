@@ -45,7 +45,6 @@ local SQL_COLUMNS = {
 }
 
 
-
 --[[Function]]--
 
 function getPlayerID(source)
@@ -189,13 +188,24 @@ AddEventHandler("clothing_shop:SpawnPlayer_server", function()
 	if(getIsFirstConnection(source) == 1) then
 		createPlayerIntoDbClothes(source)
 		updateIsFirstConnection(source)
-		MySQL.Async.fetchAll("SELECT * FROM user_clothes WHERE identifier=@identifier", {['@identifier'] = getPlayerID(source)}, function(data)
+		--[[MySQL.Async.fetchAll("SELECT * FROM user_clothes WHERE identifier=@identifier", {['@identifier'] = getPlayerID(source)}, function(data)
 			TriggerClientEvent("clothing_shop:loadItems_client", source, data[1])
+		end)]]--
+		TriggerEvent('skinchanger:getSkin', function(skin)
+			TriggerServerEvent('esx_skin:save', skin)
 		end)
+		TriggerClientEvent('esx_skin:requestSaveSkin')
+
+
 	else
-		MySQL.Async.fetchAll("SELECT * FROM user_clothes WHERE identifier=@identifier", {['@identifier'] = getPlayerID(source)}, function(data)
+		--[[MySQL.Async.fetchAll("SELECT * FROM user_clothes WHERE identifier=@identifier", {['@identifier'] = getPlayerID(source)}, function(data)
 			TriggerClientEvent("clothing_shop:loadItems_client", source, data[1])
+		end)]]--
+		TriggerEvent('skinchanger:getSkin', function(skin)
+			TriggerServerEvent('esx_skin:save', skin)
 		end)
+		TriggerClientEvent('esx_skin:requestSaveSkin')
+
 	end
 end)
 

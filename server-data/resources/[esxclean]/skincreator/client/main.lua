@@ -117,7 +117,7 @@ RegisterNUICallback('updateSkin', function(data)
 		end
 		
 		SetPedHeadOverlay       	(GetPlayerPed(-1), 3, wrinkle, wrinkleopacity * 0.1)
-		SetPedComponentVariation	(GetPlayerPed(-1), 2, hair, 0, 2)
+		SetPedComponentVariation	(GetPlayerPed(-1), 2, hair, 0, 2) --0,2  --00 --12  --42
 		SetPedHairColor				(GetPlayerPed(-1), haircolor, haircolor)
 		SetPedHeadOverlay       	(GetPlayerPed(-1), 2, eyebrow, eyebrowopacity * 0.1) 
 		SetPedHeadOverlay       	(GetPlayerPed(-1), 1, beard, beardopacity * 0.1)   
@@ -1329,6 +1329,16 @@ AddEventHandler('playerSpawned', function()
 				else
 					TriggerEvent('skinchanger:loadSkin', skin)
 				end
+
+				local isMale = skin.sex == 0
+
+				TriggerEvent('skinchanger:loadDefaultModel', isMale, function()
+					ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
+						TriggerEvent('skinchanger:loadSkin', skin)
+						TriggerEvent('esx:restoreLoadout')
+					end)
+				end)
+
 			end)
 
 			FirstSpawn = false

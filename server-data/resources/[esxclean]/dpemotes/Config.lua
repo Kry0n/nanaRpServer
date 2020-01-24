@@ -2,7 +2,7 @@ Config = {
 -- Change the language of the menu here!.
 -- Note fr and de are google translated, if you would like to help out with translation / just fix it for your server check below and change translations yourself
 -- try en, fr, de or sv.
-	MenuLanguage = 'en',	
+	MenuLanguage = 'tc',	
 -- Set this to true to enable some extra prints
 	DebugDisplay = false,
 -- Set this to false if you have something else on X, and then just use /e c to cancel emotes.
@@ -38,6 +38,8 @@ Config = {
     SqlKeybinding = true,
 }
 
+Config.Locale                     = 'tc'
+
 Config.KeybindKeys = {
     ['num4'] = 108,
     ['num5'] = 110,
@@ -48,25 +50,25 @@ Config.KeybindKeys = {
 }
 
 Config.Languages = {
-  ['en'] = {
-        ['emotes'] = 'Emotes',
-        ['danceemotes'] = "🕺 Dance Emotes",
-        ['propemotes'] = "📦 Prop Emotes",
-        ['favoriteemotes'] = "🌟 Favorite",
-        ['favoriteinfo'] = "Select an emote here to set it as your favorite.",
-        ['rfavorite'] = "Reset favorite",
+  ['tc'] = {
+        ['emotes'] = '動作 Emotes',
+        ['danceemotes'] = "🕺 挑舞 Dance Emotes",
+        ['propemotes'] = "📦 物件 Prop Emotes",
+        ['favoriteemotes'] = "🌟 最愛 Favorite",
+        ['favoriteinfo'] = "選擇一個設為最愛動作",
+        ['rfavorite'] = "重置最愛動作",
         ['prop2info'] = "❓ Prop Emotes can be located at the end",
         ['set'] = "Set (",
         ['setboundemote'] = ") to be your bound emote?",
         ['newsetemote'] = "~w~ is now your bound emote, press ~g~CapsLock~w~ to use it.",
-        ['cancelemote'] = "Cancel Emote",
-        ['cancelemoteinfo'] = "~r~X~w~ Cancels the currently playing emote",
-        ['walkingstyles'] = "Walking Styles",
-        ['resetdef'] = "Reset to default",
-        ['normalreset'] = "Normal (Reset)",
-        ['moods'] = "Moods",
-        ['infoupdate'] = "Information",
-        ['infoupdateav'] = "Information (Update available)",
+        ['cancelemote'] = "取消動作",
+        ['cancelemoteinfo'] = "~r~X~w~ 取消當前動作",
+        ['walkingstyles'] = "走路造型",
+        ['resetdef'] = "重置原本設置",
+        ['normalreset'] = "重置",
+        ['moods'] = "心情",
+        ['infoupdate'] = "資訊",
+        ['infoupdateav'] = "更新資訊",
         ['infoupdateavtext'] = "An update is available, get the latest version from ~y~https://github.com/andristum/dpemotes~w~",
         ['suggestions'] = "Suggestions?",
         ['suggestionsinfo'] = "'dullpear_dev' on FiveM forums for any feature/emote suggestions! ✉️",
@@ -93,8 +95,55 @@ Config.Languages = {
         ['currentlyboundemotes'] = " Currently bound emotes:",
         ['notvalidkey'] = "is not a valid key.",
         ['keybinds'] = "🔢 Keybinds",
-        ['keybindsinfo'] = "Use"
+        ['keybindsinfo'] = "使用"
   },
+  ['en'] = {
+    ['emotes'] = 'Emotes',
+    ['danceemotes'] = "🕺 Dance Emotes",
+    ['propemotes'] = "📦 Prop Emotes",
+    ['favoriteemotes'] = "🌟 Favorite",
+    ['favoriteinfo'] = "Select an emote here to set it as your favorite.",
+    ['rfavorite'] = "Reset favorite",
+    ['prop2info'] = "❓ Prop Emotes can be located at the end",
+    ['set'] = "Set (",
+    ['setboundemote'] = ") to be your bound emote?",
+    ['newsetemote'] = "~w~ is now your bound emote, press ~g~CapsLock~w~ to use it.",
+    ['cancelemote'] = "Cancel Emote",
+    ['cancelemoteinfo'] = "~r~X~w~ Cancels the currently playing emote",
+    ['walkingstyles'] = "Walking Styles",
+    ['resetdef'] = "Reset to default",
+    ['normalreset'] = "Normal (Reset)",
+    ['moods'] = "Moods",
+    ['infoupdate'] = "Information",
+    ['infoupdateav'] = "Information (Update available)",
+    ['infoupdateavtext'] = "An update is available, get the latest version from ~y~https://github.com/andristum/dpemotes~w~",
+    ['suggestions'] = "Suggestions?",
+    ['suggestionsinfo'] = "'dullpear_dev' on FiveM forums for any feature/emote suggestions! ✉️",
+    ['notvaliddance'] = "is not a valid dance.",
+    ['notvalidemote'] = "is not a valid emote.",
+    ['nocancel'] = "No emote to cancel.",
+    ['maleonly'] = "This emote is male only, sorry!",
+    ['emotemenucmd'] = "Do /emotemenu for a menu.",
+    ['shareemotes'] = "👫 Shared Emotes",
+    ['shareemotesinfo'] = "Invite a nearby person to emote",
+    ['sharedanceemotes'] = "🕺 Shared Dances",
+    ['notvalidsharedemote'] = "is not a valid shared emote.",
+    ['sentrequestto'] = "Sent request to ~y~",
+    ['nobodyclose'] = "Nobody ~r~close~w~ enough.",
+    ['doyouwanna'] = "~y~Y~w~ to accept, ~r~L~w~ to refuse (~g~",
+    ['refuseemote'] = "Emote refused.",
+    ['makenearby'] = "makes the nearby player play",
+    ['camera'] = "Press ~y~G~w~ to use camera flash.",
+    ['makeitrain'] = "Press ~y~G~w~ to make it rain.",
+    ['pee'] = "Hold ~y~G~w~ to pee.",
+    ['spraychamp'] = "Hold ~y~G~w~ to spray champagne",
+    ['bound'] = "Bound ",
+    ['to'] = "to",
+    ['currentlyboundemotes'] = " Currently bound emotes:",
+    ['notvalidkey'] = "is not a valid key.",
+    ['keybinds'] = "🔢 Keybinds",
+    ['keybindsinfo'] = "Use"
+},
   ['fr'] = {
         ['emotes'] = 'Emotes',
         ['danceemotes'] = "🕺 Emotes de danse",

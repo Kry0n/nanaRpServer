@@ -1,0 +1,639 @@
+<html>
+
+<head>
+  <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!--<script src="nui://game/ui/jquery.js" type="text/javascript"></script> -->
+  <script src="locales/tc.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="skinCreator">
+    <input id="radio1" type="radio" name="css-tabs" checked>
+    <input id="radio2" type="radio" name="css-tabs">
+    <input id="radio3" type="radio" name="css-tabs">
+    <div id="tabs">
+      <label id="tab1" for="radio1" data-link="pilosite">髮</label>
+      <label id="tab2" for="radio2" data-link="vetements">服裝</label>
+    </div>
+    <div id="content">
+      <form id="formSkinCreator">
+        <section id="content1">
+          <div class="block pilosite active">
+            <div class="group">
+              <h2 id="hairHeader">髮</h2>
+              <div class="input">
+                <div class="label" id="hairstyle">髮型</div>
+                <div class="label-value" data-legend="74"></div>
+                <div class="type-range">
+                  <a href="#" class="arrow arrow-left">&nbsp;</a>
+                  <input value="0" type="range" class="hair" min="0" max="74">
+                  <a href="#" class="arrow arrow-right">&nbsp;</a>
+                </div>
+              </div>
+
+              <div class="input">
+                <div class="label" id="hairColor">髮色</div>
+                <div class="type-radio">
+                  <label for="c1">
+                    <input type="radio" name="haircolor" class="haircolor" value="0" id="c1" checked>
+                    <span class="color" data-color="#1D1D1A"></span>
+                  </label>
+                  <label for="c2">
+                    <input type="radio" name="haircolor" class="haircolor" value="2" id="c2">
+                    <span class="color" data-color="#4B392D"></span>
+                  </label>
+                  <label for="c3">
+                    <input type="radio" name="haircolor" class="haircolor" value="4" id="c3">
+                    <span class="color" data-color="#7A3B1F"></span>
+                  </label>
+                  <label for="c4">
+                    <input type="radio" name="haircolor" class="haircolor" value="6" id="c4">
+                    <span class="color" data-color="#A35631"></span>
+                  </label>
+                  <label for="c5">
+                    <input type="radio" name="haircolor" class="haircolor" value="8" id="c5">
+                    <span class="color" data-color="#A96F49"></span>
+                  </label>
+                  <label for="c6">
+                    <input type="radio" name="haircolor" class="haircolor" value="10" id="c6">
+                    <span class="color" data-color="#BD8D5E"></span>
+                  </label>
+                  <label for="c7">
+                    <input type="radio" name="haircolor" class="haircolor" value="12" id="c7">
+                    <span class="color" data-color="#CBA66F"></span>
+                  </label>
+                  <label for="c8">
+                    <input type="radio" name="haircolor" class="haircolor" value="14" id="c8">
+                    <span class="color" data-color="#E8BE78"></span>
+                  </label>
+                  <label for="c9">
+                    <input type="radio" name="haircolor" class="haircolor" value="16" id="c9">
+                    <span class="color" data-color="#D09E6A"></span>
+                  </label>
+                  <label for="c10">
+                    <input type="radio" name="haircolor" class="haircolor" value="18" id="c10">
+                    <span class="color" data-color="#993524"></span>
+                  </label>
+                  <label for="c11">
+                    <input type="radio" name="haircolor" class="haircolor" value="20" id="c11">
+                    <span class="color" data-color="#9C1611"></span>
+                  </label>
+                  <label for="c12">
+                    <input type="radio" name="haircolor" class="haircolor" value="22" id="c12">
+                    <span class="color" data-color="#D1381E"></span>
+                  </label>
+                  <label for="c13">
+                    <input type="radio" name="haircolor" class="haircolor" value="24" id="c13">
+                    <span class="color" data-color="#C85831"></span>
+                  </label>
+                  <label for="c14">
+                    <input type="radio" name="haircolor" class="haircolor" value="26" id="c14">
+                    <span class="color" data-color="#947A67"></span>
+                  </label>
+                  <label for="c15">
+                    <input type="radio" name="haircolor" class="haircolor" value="28" id="c15">
+                    <span class="color" data-color="#D8C1AC"></span>
+                  </label>
+                  <label for="c16">
+                    <input type="radio" name="haircolor" class="haircolor" value="30" id="c16">
+                    <span class="color" data-color="#734F61"></span>
+                  </label>
+                  <label for="c17">
+                    <input type="radio" name="haircolor" class="haircolor" value="32" id="c17">
+                    <span class="color" data-color="#AD476A"></span>
+                  </label>
+                  <label for="c18">
+                    <input type="radio" name="haircolor" class="haircolor" value="35" id="c18">
+                    <span class="color" data-color="#FFAEBC"></span>
+                  </label>
+                  <label for="c19">
+                    <input type="radio" name="haircolor" class="haircolor" value="36" id="c19">
+                    <span class="color" data-color="#089A8D"></span>
+                  </label>
+                  <label for="c20">
+                    <input type="radio" name="haircolor" class="haircolor" value="40" id="c20">
+                    <span class="color" data-color="#309060"></span>
+                  </label>
+                  <label for="c21">
+                    <input type="radio" name="haircolor" class="haircolor" value="43" id="c21">
+                    <span class="color" data-color="#A3C015"></span>
+                  </label>
+                  <label for="c22">
+                    <input type="radio" name="haircolor" class="haircolor" value="45" id="c22">
+                    <span class="color" data-color="#EEC85C"></span>
+                  </label>
+                  <label for="c23">
+                    <input type="radio" name="haircolor" class="haircolor" value="48" id="c23">
+                    <span class="color" data-color="#FE8B10"></span>
+                  </label>
+                  <label for="c24">
+                    <input type="radio" name="haircolor" class="haircolor" value="53" id="c24">
+                    <span class="color" data-color="#D40B0E"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="group">
+              <h2 id="eyebrowHeader">眉毛</h2>
+              <div class="input">
+                <div class="label" id="eyebrowShape">眉形</div>
+                <div class="label-value" data-legend="34"></div>
+                <div class="type-range">
+                  <a href="#" class="arrow arrow-left">&nbsp;</a>
+                  <input value="0" type="range" class="sourcils" min="0" max="34">
+                  <a href="#" class="arrow arrow-right">&nbsp;</a>
+                </div>
+              </div>
+
+              <div class="input">
+                <div class="label" id="eyebrowThickness">眉毛粗細</div>
+                <div class="label-value" data-legend="10"></div>
+                <div class="type-range">
+                  <a href="#" class="arrow arrow-left">&nbsp;</a>
+                  <input value="10" type="range" class="epaisseursourcils" min="0" max="10">
+                  <a href="#" class="arrow arrow-right">&nbsp;</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="group">
+              <h2 id="beardHeader">鬍子</h2>
+              <div class="input">
+                <div class="label" id="beardStyle">鬍子造型</div>
+                <div class="label-value" data-legend="28"></div>
+                <div class="type-range">
+                  <a href="#" class="arrow arrow-left">&nbsp;</a>
+                  <input value="0" type="range" class="barbe" min="0" max="28">
+                  <a href="#" class="arrow arrow-right">&nbsp;</a>
+                </div>
+              </div>
+
+              <div class="input">
+                <div class="label" id="beardThickness">鬍鬚厚度</div>
+                <div class="label-value" data-legend="10"></div>
+                <div class="type-range">
+                  <a href="#" class="arrow arrow-left">&nbsp;</a>
+                  <input value="10" type="range" class="epaisseurbarbe" min="0" max="10">
+                  <a href="#" class="arrow arrow-right">&nbsp;</a>
+                </div>
+              </div>
+
+              <div class="input">
+                <div class="label" id="beardColor">髮色</div>
+                <div class="type-radio">
+                  <label for="bc1">
+                    <input type="radio" name="barbecolor" class="barbecolor" value="0" id="bc1" checked>
+                    <span class="color" data-color="#1D1D1A"></span>
+                  </label>
+                  <label for="bc2">
+                    <input type="radio" name="barbecolor" class="barbecolor" value="2" id="bc2">
+                    <span class="color" data-color="#4B392D"></span>
+                  </label>
+                  <label for="bc3">
+                    <input type="radio" name="barbecolor" class="barbecolor" value="4" id="bc3">
+                    <span class="color" data-color="#7A3B1F"></span>
+                  </label>
+                  <label for="bc4">
+                    <input type="radio" name="barbecolor" class="barbecolor" value="6" id="bc4">
+                    <span class="color" data-color="#A35631"></span>
+                  </label>
+                  <label for="bc5">
+                    <input type="radio" name="barbecolor" class="barbecolor" value="8" id="bc5">
+                    <span class="color" data-color="#A96F49"></span>
+                  </label>
+                  <label for="bc6">
+                    <input type="radio" name="barbecolor" class="barbecolor" value="10" id="bc6">
+                    <span class="color" data-color="#BD8D5E"></span>
+                  </label>
+                  <label for="bc7">
+                    <input type="radio" name="barbecolor" class="barbecolor" value="12" id="bc7">
+                    <span class="color" data-color="#CBA66F"></span>
+                  </label>
+                  <label for="bc8">
+                    <input type="radio" name="barbecolor" class="barbecolor" value="14" id="bc8">
+                    <span class="color" data-color="#E8BE78"></span>
+                  </label>
+                  <label for="bc9">
+                    <input type="radio" name="barbecolor" class="barbecolor" value="16" id="bc9">
+                    <span class="color" data-color="#D09E6A"></span>
+                  </label>
+                  <label for="bc13">
+                    <input type="radio" name="barbecolor" class="barbecolor" value="24" id="bc13">
+                    <span class="color" data-color="#C85831"></span>
+                  </label>
+                  <label for="bc14">
+                    <input type="radio" name="barbecolor" class="barbecolor" value="26" id="bc14">
+                    <span class="color" data-color="#947A67"></span>
+                  </label>
+                  <label for="bc15">
+                    <input type="radio" name="barbecolor" class="barbecolor" value="28" id="bc15">
+                    <span class="color" data-color="#D8C1AC"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <section id="content2">
+          <div class="block vetements active">
+            <div class="group">
+              <h2 id="hatsHeader">帽子</h2>
+			  <div class="vetements-value" data-legend="">0</div>
+              <ul class="chapeaux">
+				<button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+				<li order="0" data="0" class="active">沒有</li>
+				<li order="1" data="2">帽子</li>
+				<li order="2" data="7">貝雷帽</li>
+				<li order="3" data="13">牛仔帽</li>
+				<li order="4" data="14">印花大手帕</li>
+				<li order="5" data="15">頭戴式耳機</li>
+				<li order="6" data="20">Bob tréi</li>
+				<li order="7" data="21">職位空缺</li>
+				<li order="8" data="25">節日帽</li>
+				<li order="9" data="26">禮帽</li>
+				<li order="10" data="27">高頂禮帽</li>
+				<li order="11" data="34">羊毛帽</li>
+				<li order="12" data="55">Casquette Broker</li>
+				<li order="13" data="76">快速蓋</li>
+				<li order="14" data="96">沙堡帽</li>
+				<button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+			  </ul>
+			  <div class="input">
+				<div class="label">帽子顏色</div>
+				<div class="label-value" name="helmet_2" data-legend="0"></div>
+				<div class="type-range">
+				  <a href="#" class="arrow arrow-left">&nbsp;</a>
+				  <input value="0" type="range" class="helmet_2" min="0" max="0">
+				  <a href="#" class="arrow arrow-right">&nbsp;</a>
+				</div>
+			  </div>
+            </div>
+            <div class="group">
+			  <h2 id="glassesHeader">眼鏡</h2>
+			  <div class="vetements-value" data-legend="">0</div>
+			  <ul class="lunettes">
+				<button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+				<li order="0" data="0" class="active">沒有</li>
+				<li order="1" data="1">大黑（太陽）</li>
+				<li order="2" data="2">大黑</li>
+				<li order="3" data="3">半開放（太陽）</li>
+				<li order="4" data="4">黑色無框</li>
+				<li order="5" data="5">飛行員 (太陽)</li>
+				<li order="6" data="6">飛行員</li>
+				<li order="7" data="7">徒步旅行者（太陽）</li>
+				<li order="8" data="8">動物園（太陽）</li>
+				<li order="9" data="9">運動（太陽）</li>
+				<li order="10" data="10">山（太陽）</li>
+				<li order="11" data="11">野人</li>
+				<li order="12" data="11">滑雪（太陽）</li>
+				<button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+			  </ul>
+			  <div class="input">
+				<div class="label">眼鏡顏色</div>
+				<div class="label-value" name="glasses_2" data-legend="0"></div>
+				<div class="type-range">
+				  <a href="#" class="arrow arrow-left">&nbsp;</a>
+				  <input value="0" type="range" class="glasses_2" min="0" max="0">
+				  <a href="#" class="arrow arrow-right">&nbsp;</a>
+				</div>
+			  </div>
+			</div>
+            <div class="group">
+              <h2 id="earringsHeader">耳朵</h2>
+              <div class="vetements-value" data-legend="">0</div>
+              <ul class="oreilles">
+                <button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+                <li order="0" data="0" class="active">沒有</li>
+                <li order="1" data="3">循環（左）</li>
+                <li order="2" data="4">帶扣（右）</li>
+                <li order="3" data="5">環</li>
+                <li order="4" data="9">鑽石（右）</li>
+                <li order="5" data="10">鑽石（左）</li>
+                <li order="6" data="11">鑽石</li>
+                <li order="7" data="18">正方形（左）</li>
+                <li order="8" data="19">正方形（右）</li>
+                <li order="9" data="20">廣場</li>
+                <li order="10" data="27">鐵鍬（左）</li>
+                <li order="11" data="28">尖刺（右）</li>
+                <li order="12" data="29">Pique</li>
+                <li order="13" data="30">真鑽石（左）</li>
+                <li order="14" data="31">真鑽石（右）</li>
+                <li order="15" data="32">真正的鑽石</li>
+                <button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+              </ul>
+			  <div class="input">
+				<div class="label">耳色</div>
+				<div class="label-value" name="ears_2" data-legend="0"></div>
+				<div class="type-range">
+				  <a href="#" class="arrow arrow-left">&nbsp;</a>
+				  <input value="0" type="range" class="ears_2" min="0" max="0">
+				  <a href="#" class="arrow arrow-right">&nbsp;</a>
+				</div>
+			  </div>
+            </div>
+
+            <div class="group">
+              <h2 id="topsHeader">衣服</h2>
+              <div class="vetements-value" data-legend="">0</div>
+              <ul class="hauts">
+                <button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+                <li data="0" class="active">沒有</li>
+                <li data="1">T-shirt 基本的米色</li>
+                <li data="2">T-shirt 基本粉紅色</li>
+                <li data="3">簡單的籃球服</li>
+                <li data="4">休閒運動金</li>
+                <li data="5">紅色運動休閒</li>
+                <li data="6">休閒西裝</li>
+                <li data="7">黑色三件套</li>
+                <li data="8">白色三件套</li>
+                <li data="9">白色背心</li>
+                <li data="10">棕色皮夾克</li>
+                <li data="11">黑色皮夾克</li>
+                <li data="12">紅色皮夾克</li>
+                <li data="13">海軍連帽衫</li>
+                <li data="14">藍褐色連帽衫</li>
+                <li data="15">勃艮第藍色連帽衫</li>
+                <li data="16">藍綠色連帽衫</li>
+                <li data="17">條紋polo衫</li>
+                <li data="18">西裝和白襯衫</li>
+                <li data="19">黑色領帶套裝</li>
+                <li data="20">紅色領帶套裝</li>
+                <li data="21">領結服裝</li>
+                <li data="22">綠色格子襯衫</li>
+                <li data="23">捲袖襯衫</li>
+                <li data="24">毛衣上的藍色襯衫</li>
+                <li data="25">毛衣上的黃色襯衫</li>
+                <li data="26">T-shirt V 灰褐色</li>
+                <li data="27">T-shirt V 藍色</li>
+                <li data="28">T-shirt V 玫瑰</li>
+                <li data="29">藍色背心</li>
+                <li data="30">黃色背心</li>
+                <li data="31">破舊的背心</li>
+                <li data="32">海軍藍短袖襯衫</li>
+                <li data="33">短袖粉紅色襯衫</li>
+                <li data="34">短袖格子襯衫</li>
+                <li data="35">襯衫休閒服</li>
+                <li data="36">黃色/綠色條紋背心</li>
+                <li data="37">迷彩條紋背心</li>
+                <li data="38">棕色外套</li>
+                <li data="39">黑色/黃色外套</li>
+                <li data="40">黑色/紅色外套</li>
+                <li data="41">T-shirt 長袖灰色/黑色</li>
+                <li data="42">T-shirt 長袖黃色/黑色</li>
+                <li data="43">紅色史塔克 Polo衫</li>
+                <li data="44">藍色史塔克 Polo衫</li>
+                <li data="45">紅色格子襯衫</li>
+                <li data="46">帶吊帶襯衫</li>
+                <li data="47">黑色毛衣</li>
+                <li data="48">白色毛衣</li>
+                <li data="49">卡其色毛衣</li>
+                <li data="50">連帽衫</li>
+                <li data="51">黑髮棕色河豚外套</li>
+                <li data="52">淺毛棕色外套</li>
+                <li data="53">棕色頭髮的羽絨服</li>
+                <li data="54">長款派克大衣和三件套西裝</li>
+                <li data="55">路易威登飛行員夾克</li>
+                <li data="56">領帶襯衫派克大衣</li>
+                <li data="57">狼紅色飛行員夾克</li>
+                <li data="58">T-shirt XXL 白</li>
+                <li data="59">T-shirt XXL 黑</li>
+                <li data="60">粉色Polo Ralph Lauren</li>
+                <li data="61">米色Polo Ralph Lauren </li>
+                <li data="62">深藍色Polo Ralph Lauren </li>
+                <li data="63">黑色連帽衫</li>
+                <li data="64">白色連帽衫</li>
+                <li data="65">紅色連帽衫</li>
+                <li data="66">Bomber 實驗市</li>
+                <li data="67">Bomber 雙P</li>
+                <li data="68">Bomber 磁</li>
+                <li data="69">Bomber 腹地</li>
+                <li data="70">Bomber 經紀人</li>
+                <li data="71">Bomber 騙子</li>
+                <li data="72">基本的黑色毛衣</li>
+                <li data="73">牛仔襯衫</li>
+                <li data="74">拱形藍色西裝</li>
+                <li data="75">拱形粉紅色西裝</li>
+                <li data="76">紅色西裝</li>
+                <li data="77">碎花襯衫</li>
+                <li data="78">羊毛外套</li>
+                <li data="79">無袖開衫襯衫</li>
+                <li data="80">灰色高領毛衣</li>
+                <li data="81">黑色高領毛衣</li>
+                <li data="82">Asics運動服外套</li>
+                <li data="83">藍色格子襯衫</li>
+                <li data="84">綠色格子襯衫</li>
+                <li data="85">紅色格子襯衫</li>
+                <li data="86">灰色/白色格子襯衫</li>
+                <li data="87">Polo 自由</li>
+                <li data="88">黑色Liberty連帽衫</li>
+                <li data="89">紅色Liberty連帽衫</li>
+                <li data="90">綠色飛行員夾克</li>
+                <li data="91">紫色飛行員夾克</li>
+                <li data="92">紅色飛行員夾克</li>
+                <li data="93">藍色飛行員夾克</li>
+                <li data="94">藍色飛行員夾克</li>
+                <li data="95">白色飛行員夾克</li>
+                <li data="96">黑色飛行員夾克</li>
+                <li data="97">白T-shirt </li>
+                <li data="98">皮夾克</li>
+                <li data="99">紅色河豚外套</li>
+                <li data="100">綠色河豚外套</li>
+                <li data="101">棕色河豚外套</li>
+                <li data="102">芥末黃河豚外套</li>
+                <li data="103">牛仔外套</li>
+                <li data="104">刺繡牛仔外套</li>
+                <li data="105">刺繡無袖牛仔夾克</li>
+                <li data="106">灰色派克大衣</li>
+                <li data="107">無袖連帽衫</li>
+                <li data="108">連帽衫</li>
+                <li data="109">Güffy連帽衫</li>
+                <li data="110">莊園連帽衫</li>
+                <li data="111">無袖連帽衫</li>
+                <li data="112">T-shirt 帶口袋</li>
+                <li data="113">百搭外套</li>
+                <li data="114">古菲外套</li>
+                <li data="115">Santo Capra外套</li>
+                <li data="116">Perseus毛衣</li>
+                <li data="117">灰色河豚外套</li>
+                <li data="118">威格姆球衣</li>
+                <button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+              </ul>
+            </div>
+
+            <div class="group">
+              <h2 id="jeansHeader">腿</h2>
+              <div class="vetements-value" data-legend="">0</div>
+              <ul class="pantalons">
+                <button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+                <li data="0" class="active">沒有</li>
+                <li data="1">普通牛仔褲</li>
+                <li data="2">常規水洗牛仔褲</li>
+                <li data="3">直筒常規牛仔褲</li>
+                <li data="4">運動短褲</li>
+                <li data="5">白色慢跑</li>
+                <li data="6">黑色緊身牛仔褲</li>
+                <li data="7">藍色緊身牛仔褲</li>
+                <li data="8">水洗藍色緊身牛仔褲</li>
+                <li data="9">慢跑寬衣</li>
+                <li data="10">黑色慢跑寬衣</li>
+                <li data="11">黑色闊腿褲</li>
+                <li data="12">棕色闊腿褲</li>
+                <li data="13">卡其色口袋褲</li>
+                <li data="14">米色口袋褲</li>
+                <li data="15">黑色常規西裝褲</li>
+                <li data="16">藍色常規西裝褲</li>
+                <li data="17">黑色短褲</li>
+                <li data="18">灰色短褲</li>
+                <li data="19">米色短褲</li>
+                <li data="20">灰色跑步短褲</li>
+                <li data="21">黑色跑步短褲</li>
+                <li data="22">勃艮第的跑步短褲</li>
+                <li data="23">寬短褲</li>
+                <li data="24">白褲</li>
+                <li data="25">黑色緊身褲</li>
+                <li data="26">灰色緊身褲</li>
+                <li data="27">白色緊身褲</li>
+                <li data="28">黑色緊身牛仔褲</li>
+                <li data="29">淺藍色緊身牛仔褲</li>
+                <li data="30">紅色緊身牛仔褲</li>
+                <li data="31">藍色緊身牛仔褲</li>
+                <li data="32">黑色緊身褲</li>
+                <li data="33">灰色緊身褲</li>
+                <li data="34">淺灰色緊身褲</li>
+                <li data="35">米色緊身褲</li>
+                <li data="36">黑色短跑</li>
+                <li data="37">短慢跑褲</li>
+                <li data="38">長款透明褲</li>
+                <li data="39">深色長褲</li>
+                <li data="40">透明短褲</li>
+                <li data="41">深色短褲</li>
+                <li data="42">游泳短褲</li>
+                <li data="43">阿迪達斯慢跑</li>
+                <li data="44">檢查褲</li>
+                <li data="45">檢查褲</li>
+                <li data="46">皮褲</li>
+                <li data="47">圖案牛仔褲</li>
+                <li data="48">破洞牛仔褲</li>
+                <li data="49">棕色緊身慢跑褲</li>
+                <li data="50">黑色緊身慢跑</li>
+                <li data="51">白色緊身慢跑</li>
+                <li data="52">海軍藍緊身牛仔褲</li>
+                <li data="53">藍色緊身牛仔褲</li>
+                <li data="54">灰色緊身牛仔褲</li>
+                <li data="55">迷彩褲</li>
+                <li data="56">迷彩短褲</li>
+                <li data="57">銀行迷彩褲</li>
+                <button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+              </ul>
+            </div>
+
+            <div class="group">
+              <h2 id="shoesHeader">腳</h2>
+              <div class="vetements-value" data-legend="">0</div>
+              <ul class="chaussures">
+                <button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+                <li data="0" class="active">沒有</li>
+                <li data="1">EE運動鞋</li>
+                <li data="2">黑色Etny運動鞋</li>
+                <li data="3">白色Etny運動鞋</li>
+                <li data="4">紅色Etny運動鞋</li>
+                <li data="5">灰色水手鞋</li>
+                <li data="6">棕色水手鞋</li>
+                <li data="7">藍色水手鞋</li>
+                <li data="8">匡威黑色</li>
+                <li data="9">匡威粉紅</li>
+                <li data="10">逆芥末</li>
+                <li data="11">匡威灰</li>
+                <li data="12">白色夾角拖</li>
+                <li data="13">拖鞋和襪子</li>
+                <li data="14">白色運動鞋</li>
+                <li data="15">紅色運動鞋</li>
+                <li data="16">綠色運動鞋</li>
+                <li data="17">紅色運動鞋</li>
+                <li data="18">黃色/綠色運動鞋</li>
+                <li data="19">藍色/紅色運動鞋</li>
+                <li data="20">黑色禮服鞋</li>
+                <li data="21">林地經典</li>
+                <li data="22">藍色林地</li>
+                <li data="23">林地粉紅</li>
+                <li data="24">黑色禮服鞋</li>
+                <li data="25">棕色禮服鞋</li>
+                <li data="26">黑色夾角拖</li>
+                <li data="27">棕色禮服鞋</li>
+                <li data="28">黑色遊俠</li>
+                <li data="29">損壞的遊騎兵</li>
+                <li data="30">時尚與白色的山峰</li>
+                <li data="31">黑色尖刺時尚</li>
+                <li data="32">時尚與紅峰</li>
+                <li data="33">全紅峰時尚</li>
+                <li data="34">白色運動鞋</li>
+                <li data="35">獵豹運動鞋</li>
+                <li data="36">棕色泵</li>
+                <li data="37">黑泵</li>
+                <li data="38">白色無花邊運動鞋</li>
+                <li data="39">黑色無花邊運動鞋</li>
+                <li data="40">綠色無花邊運動鞋</li>
+                <li data="41">米色運動鞋</li>
+                <li data="42">棕色運動鞋</li>
+                <li data="43">紅色運動鞋</li>
+                <li data="44">白色運動鞋</li>
+                <li data="45">黑色運動鞋</li>
+                <li data="46">粉色運動鞋</li>
+                <li data="47">白色/粉紅色高幫運動鞋</li>
+                <li data="48">綠色高幫運動鞋</li>
+                <li data="49">橙色高幫運動鞋</li>
+                <li data="50">白色霓虹燈運動鞋</li>
+                <button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+              </ul>
+            </div>
+
+            <div class="group">
+              <h2 id="watchHeader">手錶</h2>
+              <div class="vetements-value" data-legend="">0</div>
+              <ul class="montre">
+                <button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+                <li data="0" class="active">沒有</li>
+                <li data="1">經典</li>
+                <li data="2">連接的</li>
+                <li data="3">運動（黑色）</li>
+                <li data="4">運動（白色）</li>
+                <li data="5">鍍金</li>
+                <li data="6">金</li>
+                <li data="7">金屬的</li>
+                <button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+        <button class="submit" id="finishButton">結束</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="rotation">
+    <div class="button">A</div>
+    <div class="button">E</div>
+    <p id="rotationLabel">角色旋轉</p>
+  </div>
+
+  <div class="popup confirmation">
+    <p id="popupConfirm">確定要紀錄外觀嗎?</p>
+    <div class="buttons">
+      <div id="popupYes" class="button yes">是</div>
+      <div id="popupNo" class="button no">否</div>
+    </div>
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="front.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

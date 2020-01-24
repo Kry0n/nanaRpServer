@@ -550,7 +550,7 @@ function mycbpolice(success, timeRemaining)
 		ShakeGameplayCam("DEATH_FAIL_IN_EFFECT_SHAKE", 1.0)
 		Citizen.Wait(500)
 		PlaySoundFrontend(-1, "TextHit", "WastedSounds", 1)
-		TriggerServerEvent('esx_phone:send', 'police', '警報:有人嘗試破解我們的電腦！快速前往警局。', false, false)
+		TriggerServerEvent('esx_phone:send', 'police', 'POLICE ALARM: SOMEONE TRIED TO HACK OUR COMPUTERS. COME TO THE STATION FAST.', false, false)
 	end
 end
 
@@ -587,7 +587,7 @@ function mycbbank(success, timeRemaining)
 		ShakeGameplayCam("DEATH_FAIL_IN_EFFECT_SHAKE", 1.0)
 		Citizen.Wait(500)
 		PlaySoundFrontend(-1, "TextHit", "WastedSounds", 1)
-		TriggerServerEvent('esx_phone:send', 'police', '銀行:求救！有人嘗試破解電腦！請盡快過來或是查看監視器。', false, false)
+		TriggerServerEvent('esx_phone:send', 'police', 'BANK: HELP! SOMEONE TRIED TO HACK MY COMPUTER! COME HERE RIGHT AWAY OR LOOK IN THE CAMERAS FAST.', false, false)
 	end
 end
 

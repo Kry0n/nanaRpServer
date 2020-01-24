@@ -1,0 +1,18 @@
+Locales['tc'] = {
+  ['actions']                           = '操作',
+  ['amount']                            = '金額',
+  ['balance']                           = '平衡',
+  ['bank']                              = '銀行',
+  ['bill_amount']                       = '帳單金額',
+  ['billing']                           = '出帳中',
+  ['customer']                          = '顧客',
+  ['customers']                         = '客戶',
+  ['deposit']                           = '提領',
+  ['invalid_amount']                    = '不合理的金額',
+  ['no_player_nearby']                  = '附近沒有玩家',
+  ['press_input_context_to_open_menu']  = '按下 ~INPUT_CONTEXT~ 來開啟 ~g~銀行選單~s~.',
+  ['withdraw']                          = '提領',
+  ['boss_actions']                      = '老闆操作',
+  ['phone_receive']                     = '銀行顧客',
+  ['phone_label']                       = '銀行',
+}
