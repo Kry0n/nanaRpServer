@@ -37,9 +37,9 @@ Locales['tc'] = {
   ['threw_account'] = '妳丟棄了~r~$%s~s~~b~%s~s~',
   ['threw_weapon'] = '妳丟棄了~b~%s~s~',
   ['threw_weapon_ammo'] = '妳丟棄了~b~%s~s~和~o~%sx~s~彈藥',
-  ['threw_weapon_already'] = 'you already carry the same weapon',
-  ['threw_cannot_pickup'] = 'you cannot pickup that because your inventory is full!',
-  ['threw_pickup_prompt'] = 'press ~y~E~s~ to pickup',
+  ['threw_weapon_already'] = '你已經擁有相同的武器',
+  ['threw_cannot_pickup'] = '您無法剪取那樣物品，因為您的背包已滿!',
+  ['threw_pickup_prompt'] = '按下 ~y~E~s~ 來撿取',
   -- Salary related
   ['received_salary'] = '妳收到了妳的工資: ~g~$%s~s~',
   ['received_help'] = '鑒於妳良好的表現，系統贈送給妳壹些獎勵: ~g~$%s~s~',
