@@ -100,35 +100,35 @@ Citizen.CreateThread(function()
 			if WarMenu.Button('Glendale | Upfront: $100 | Daily: $100') then
 				SpawnVehicle("glendale")
 				TriggerServerEvent("chargePlayer", 100)
-				ESX.ShowNotification("已向您收取 $100 的租金。")
+				ESX.ShowNotification("You've been charged $100 for your rental.")
 				autoChargeAmount = 100
 				isBeingCharged = true
 				WarMenu.CloseMenu()
 			elseif WarMenu.Button('Blista | Upfront: $200 | Daily: $100') then
 				SpawnVehicle("blista2")
 				TriggerServerEvent("chargePlayer", 200)
-				ESX.ShowNotification("已向您收取 $200 的租金。")
+				ESX.ShowNotification("You've been charged $200 for your rental.")
 				autoChargeAmount = 100
 				isBeingCharged = true
 				WarMenu.CloseMenu()
 			elseif WarMenu.Button('Primo | Upfront: $100 | Daily: $100') then
 				SpawnVehicle("primo")
 				TriggerServerEvent("chargePlayer", 100)
-				ESX.ShowNotification("已向您收取 $100 的租金。")
+				ESX.ShowNotification("You've been charged $100 for your rental.")
 				autoChargeAmount = 100
 				isBeingCharged = true
 				WarMenu.CloseMenu()
 			elseif WarMenu.Button('Intruder | Upfront: $250 | Daily: $100') then
 				SpawnVehicle("intruder")
 				TriggerServerEvent("chargePlayer", 250)
-				ESX.ShowNotification("已向您收取 $250 的租金。")
+				ESX.ShowNotification("You've been charged $250 for your rental.")
 				autoChargeAmount = 100
 				isBeingCharged = true
 				WarMenu.CloseMenu()
 			elseif WarMenu.Button('Banshee | Upfront: $1000 | Daily: $300') then
 				SpawnVehicle("banshee")
 				TriggerServerEvent("chargePlayer", 1000)
-				ESX.ShowNotification("已向您收取 $1000 的租金。")
+				ESX.ShowNotification("You've been charged $1000 for your rental.")
 				autoChargeAmount = 300
 				isBeingCharged = true
 				WarMenu.CloseMenu()

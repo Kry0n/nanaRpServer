@@ -156,7 +156,7 @@ DP.Shared = {
    }},
    ["baseball"] = {"anim@arena@celeb@flat@paired@no_props@", "baseball_a_player_a", "Baseball", "baseballthrow"},
    ["baseballthrow"] = {"anim@arena@celeb@flat@paired@no_props@", "baseball_a_player_b", "Baseball Throw", "baseball"},
-   ["stickup"] = {"random@countryside_gang_fight", "biker_02_stickup_loop", "Stick Up", "stickupscared", AnimationOptions =
+   ["stickup"] = {"random@countryside_gang_fight", "biker_02_stickup_loop", "Stick Up 舉槍", "stickupscared", AnimationOptions =
    {
        EmoteLoop = true,
        EmoteMoving = true,
@@ -1222,12 +1222,12 @@ DP.Emotes = {
    {
        EmoteLoop = true,
    }},
-   ["statue2"] = {"fra_0_int-1", "cs_lamardavis_dual-1", "Statue 2", AnimationOptions =
+   ["statue2"] = {"fra_0_int-1", "cs_lamardavis_dual-1", "Statue 2 街頭藝人2", AnimationOptions =
    {
        EmoteLoop = true,
        EmoteMoving = true,
    }},
-   ["statue3"] = {"club_intro2-0", "csb_englishdave_dual-0", "Statue 3", AnimationOptions =
+   ["statue3"] = {"club_intro2-0", "csb_englishdave_dual-0", "Statue 3 街頭藝人3", AnimationOptions =
    {
        EmoteLoop = true,
    }},
@@ -1595,7 +1595,7 @@ DP.Emotes = {
    ["sitchair"] = {"ScenarioObject", "PROP_HUMAN_SEAT_CHAIR_MP_PLAYER", "Sit Chair"},
    ["smoke"] = {"Scenario", "WORLD_HUMAN_SMOKING", "Smoke"},
    ["smokeweed"] = {"MaleScenario", "WORLD_HUMAN_DRUG_DEALER", "Smoke Weed"},
-   ["statue"] = {"Scenario", "WORLD_HUMAN_HUMAN_STATUE", "Statue"},
+   ["statue"] = {"Scenario", "WORLD_HUMAN_HUMAN_STATUE", "Statue 街頭藝人"},
    ["sunbathe3"] = {"Scenario", "WORLD_HUMAN_SUNBATHE", "Sunbathe 3"},
    ["sunbatheback"] = {"Scenario", "WORLD_HUMAN_SUNBATHE_BACK", "Sunbathe Back"},
    ["weld"] = {"Scenario", "WORLD_HUMAN_WELDING", "Weld"},

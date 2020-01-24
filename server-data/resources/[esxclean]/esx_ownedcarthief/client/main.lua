@@ -213,7 +213,7 @@ function ShowTimer()
 			minutes = stringsplit(raw_minutes, ".")[1]
 			seconds = stringsplit(raw_seconds-(minutes*60), ".")[1]
 
-			SetTextFont(7)
+			SetTextFont(1)
 			SetTextProportional(0)
 			SetTextScale(0.0, 0.5)
 			SetTextColour(255, 255, 255, 255)

@@ -22,6 +22,12 @@ ESX.RegisterUsableItem('water', function(source)
 	TriggerClientEvent('esx:showNotification', source, _U('used_water'))
 end)
 
+ESX.RegisterUsableItem('BULLETPROOF', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	TriggerClientEvent('esx_weaponshop:BULLETPROOF', source)
+	xPlayer.removeInventoryItem('BULLETPROOF', 1)
+end)
+
 TriggerEvent('es:addGroupCommand', 'heal', 'admin', function(source, args, user)
 	-- heal another player - don't heal source
 	if args[1] then

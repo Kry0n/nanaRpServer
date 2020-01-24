@@ -308,7 +308,7 @@ end
 
 
 function draw2dText(text, pos)
-	SetTextFont(4)
+	SetTextFont(1)
 	SetTextProportional(1)
 	SetTextScale(0.45, 0.45)
 	SetTextColour(255, 255, 255, 255)
