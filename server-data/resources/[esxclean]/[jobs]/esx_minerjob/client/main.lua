@@ -66,10 +66,10 @@ AddEventHandler('esx_miner:timer', function()
         while true do
             Citizen.Wait(1)
             if GetDistanceBetweenCoords(GetEntityCoords(ped), Config.WashingX, Config.WashingY, Config.WashingZ, true) < 5 then
-                Draw3DText( Config.WashingX, Config.WashingY, Config.WashingZ+0.5 -1.400, ('Washing stones in progress ' .. timer .. '%'), 4, 0.1, 0.1)
+                Draw3DText( Config.WashingX, Config.WashingY, Config.WashingZ+0.5 -1.400, ('清洗石頭中 ' .. timer .. '%'), 1, 0.1, 0.1)
             end
             if GetDistanceBetweenCoords(GetEntityCoords(ped), Config.RemeltingX, Config.RemeltingY, Config.RemeltingZ, true) < 5 then
-                Draw3DText( Config.RemeltingX, Config.RemeltingY, Config.RemeltingZ+0.5 -1.400, ('Remelting stones in progress ' .. timer .. '%'), 4, 0.1, 0.1)
+                Draw3DText( Config.RemeltingX, Config.RemeltingY, Config.RemeltingZ+0.5 -1.400, ('熔煉石頭中 ' .. timer .. '%'), 1, 0.1, 0.1)
             end
             if timer == 100 then
                 timer = 0

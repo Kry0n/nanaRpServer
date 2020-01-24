@@ -3,6 +3,8 @@ local shopItems = {}
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
+
+
 MySQL.ready(function()
 
 	MySQL.Async.fetchAll('SELECT * FROM weashops', {}, function(result)
@@ -41,6 +43,7 @@ ESX.RegisterServerCallback('esx_weaponshop:buyLicense', function(source, cb)
 		cb(false)
 	end
 end)
+
 
 ESX.RegisterServerCallback('esx_weaponshop:buyWeapon', function(source, cb, weaponName, zone)
 	local xPlayer = ESX.GetPlayerFromId(source)
@@ -110,14 +113,8 @@ function GetPrice(weaponName, zone)
 	end
 end
 
-ESX.RegisterUsableItem('BULLET_WEAR', function(source)
-       
-	local _source = source
+ESX.RegisterUsableItem('BULLETPROOF', function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
-	local playerPed = GetPlayerPed(-1)
-	xPlayer.removeInventoryItem('BULLET_WEAR', 1)
-	--need to add animation
-	SetPedComponentVariation(playerPed, 9, 27, 9, 2)
-	AddArmourToPed(playerPed, 100)
-	SetPedArmour(playerPed, 100)
+	TriggerClientEvent('esx_weaponshop:BULLETPROOF', source)
+	xPlayer.removeInventoryItem('BULLETPROOF', 1)
 end)

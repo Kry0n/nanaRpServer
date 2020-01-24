@@ -348,13 +348,21 @@ skinMenu:setMenu( "jacket", txt[lang]['jackets'], function() return skinMenu:get
 
 function ChangeGender(skin)
     local newSkin = nil;
-    if skin == "mp_m_freemode_01" then
+    --[[if skin == "mp_m_freemode_01" then
         newSkin = "mp_f_freemode_01"
         setSkin(newSkin)
     else
         newSkin = "mp_m_freemode_01"
         setSkin(newSkin)
-    end
+    end]]--
+
+    ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
+        TriggerEvent('skinchanger:loadSkin', skin)
+        newSkin = skin
+    end)
+
+    setSkin(newSkin)
+
 
     BuyItem({collection = "skin"}, {value = newSkin })
     SetPedComponentVariation(GetPlayerPed(-1), 0, 0, 0, 2)
@@ -393,7 +401,11 @@ function LoadItems(items)
         setItem("prop", 1, items.glasses, items.glasses_texture)
         setItem("prop", 2, items.ears, items.ears_texture)
     else
-        setSkin("mp_m_freemode_01") -- I hope the feminists are not gonna argue lol
+        --setSkin("mp_m_freemode_01") -- I hope the feminists are not gonna argue lol
+        ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin)
+            setSkin(skin)
+        end)
+
         SetPedComponentVariation(GetPlayerPed(-1), 0, 0, 0, 2)
         SetPedComponentVariation(GetPlayerPed(-1), 2, 11, 4, 2)
         SetPedComponentVariation(GetPlayerPed(-1), 4, 1, 5, 2)
@@ -566,15 +578,16 @@ Citizen.CreateThread(function()
         end
         if(IsNearShop()) then
             if IsControlJustPressed(1,51) then
-                skinMenu.open = true
-                isLeaving = true
+                --skinMenu.open = true
+                --isLeaving = true
+                TriggerEvent("skincreatortwo:loadMenu")
             end
-        else
+        --[[else
             skinMenu:close()
             if isLeaving then
               TriggerServerEvent("clothing_shop:SpawnPlayer_server") -- Validate the choices ;)
               isLeaving = false
-            end
+            end--]]
         end
         Citizen.Wait(0)
     end

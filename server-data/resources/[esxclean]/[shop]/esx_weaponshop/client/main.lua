@@ -232,3 +232,12 @@ Citizen.CreateThread(function()
 		end
 	end
 end)
+
+
+RegisterNetEvent('esx_weaponshop:BULLETPROOF')
+AddEventHandler('esx_weaponshop:BULLETPROOF', function()
+	local playerPed = GetPlayerPed(-1)
+	SetPedComponentVariation(playerPed, 9, 27, 9, 2)
+	AddArmourToPed(playerPed, 100)
+	SetPedArmour(playerPed, 100)
+end)

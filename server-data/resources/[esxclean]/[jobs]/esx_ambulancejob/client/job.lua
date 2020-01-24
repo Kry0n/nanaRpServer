@@ -836,7 +836,7 @@ function WaitForVehicleToLoad(modelHash)
 end
 
 function drawLoadingText(text, red, green, blue, alpha)
-	SetTextFont(4)
+	SetTextFont(1)
 	SetTextScale(0.0, 0.5)
 	SetTextColour(red, green, blue, alpha)
 	SetTextDropshadow(0, 0, 0, 0, 255)
